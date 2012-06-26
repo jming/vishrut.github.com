@@ -23,28 +23,17 @@ Ext.define('Med-Table.view.Schedule',{
                         hidden: true,
                         url : 'resources/Audio/MedicineSchedule.mp3'
                     },
+
                     {
-                        xtype: 'button',
-                        text : '<img src="resources/images/home-small.png">',
-                        handler: function()
-                        {
-                            audio.stop();
-                            Ext.Viewport.setActiveItem(Ext.create('Med-Table.view.Menu'))
-                        },
-                        padding:'5px'
-                    },
-                    {
-                        xtype: 'spacer'
-                    },
-                    /*{
                      xtype: 'button',
-                     text : '<img src="resources/images/reminder-small.png">',
+                     disabled:'true',
+                     text : '<img src="resources/images/sched_clicked.png">',
                      handler: function()
                      {
                      Ext.Viewport.setActiveItem(Ext.create('Med-Table.view.CalendarDisplay'))
                      },
                      padding:'5px'
-                     },*/
+                     },
                     {
                         xtype: 'button',
                         text : '<img src="resources/images/instructions-small.png">',
@@ -64,7 +53,21 @@ Ext.define('Med-Table.view.Schedule',{
                             Ext.Viewport.setActiveItem(Ext.create('Med-Table.view.Appointment'))
                         },
                         padding:'5px'
+                    },
+                    {
+                        xtype: 'spacer'
+                    },
+                    {
+                        xtype: 'button',
+                        text : '<img src="resources/images/home-small.png">',
+                        handler: function()
+                        {
+                            audio.stop();
+                            Ext.Viewport.setActiveItem(Ext.create('Med-Table.view.Main'))
+                        },
+                        padding:'5px'
                     }
+
 
                 ]
 

@@ -5,7 +5,7 @@ Ext.define('Med-Table.store.AfternoonMedicines',{
         data:[
             {
                 name:'tab3',
-                icon:'resources/images/t3.gif',
+                icon:'resources/images/t3.jpg',
                 dose:'1 Tablet'
             },
             {

@@ -13,27 +13,18 @@ Ext.define('Med-Table.view.ExpandedAfternoon',{
                 ui:'light',
                 height : 'auto',
                 items: [
+
+
                     {
-                        xtype: 'button',
-                        text : '<img src="resources/images/home-small.png">',
-                        handler: function()
-                        {
-                            Ext.Viewport.setActiveItem(Ext.create('Med-Table.view.Menu'))
-                        },
-                        padding:'5px'
-                    },
-                    {
-                        xtype: 'spacer'
-                    },
-                    /*{
                      xtype: 'button',
-                     text : '<img src="resources/images/reminder-small.png">',
+                     disabled:'true',
+                     text : '<img src="resources/images/sched_clicked.png">',
                      handler: function()
                      {
-                     Ext.Viewport.setActiveItem(Ext.create('Med-Table.view.CalendarDisplay'))
+                     Ext.Viewport.setActiveItem(Ext.create('Med-Table.view.Schedule'))
                      },
                      padding:'5px'
-                     },*/
+                     },
                     {
                         xtype: 'button',
                         text : '<img src="resources/images/instructions-small.png">',
@@ -49,6 +40,18 @@ Ext.define('Med-Table.view.ExpandedAfternoon',{
                         handler: function()
                         {
                             Ext.Viewport.setActiveItem(Ext.create('Med-Table.view.Appointment'))
+                        },
+                        padding:'5px'
+                    },
+                    {
+                        xtype: 'spacer'
+                    },
+                    {
+                        xtype: 'button',
+                        text : '<img src="resources/images/home-small.png">',
+                        handler: function()
+                        {
+                            Ext.Viewport.setActiveItem(Ext.create('Med-Table.view.Main'))
                         },
                         padding:'5px'
                     }

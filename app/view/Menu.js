@@ -69,7 +69,7 @@ Ext.define('Med-Table.view.Menu', {
                  handler: function()
                  {
                      audio.stop();
-                     Ext.Viewport.setActiveItem(Ext.create('Med-Table.view.CalendarDisplay'))
+                     Ext.Viewport.setActiveItem(Ext.create('Med-Table.view.Schedule'))
                  },
 
                  left: '35px',

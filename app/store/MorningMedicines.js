@@ -10,7 +10,7 @@ Ext.define('Med-Table.store.MorningMedicines',{
             },
             {
                 name:'tab2',
-                icon:'resources/images/t2.gif',
+                icon:'resources/images/t2.jpg',
                 dose:'1/2 Tablet'
             }
         ]

@@ -10,7 +10,7 @@ Ext.define('Med-Table.store.NightMedicines', {
             },
             {
                 name:'tab8',
-                icon:'resources/images/t8.gif',
+                icon:'resources/images/t8.png',
                 dose:'1/2 Tablet'
             }
         ]

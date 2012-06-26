@@ -143,7 +143,7 @@ Ext.define('Med-Table.view.Home', {
                     flex: 1,
                     items: [{
                         xtype: 'button',
-                        text: 'C',
+                        text: '<img src="resources/images/backspace1.png" height="60">',
                         handler: function()
                         {
                             var inp = Ext.getCmp('regno').getValue();
@@ -163,18 +163,13 @@ Ext.define('Med-Table.view.Home', {
                         flex: 1
                     }, {
                         xtype: 'button',
-                        text: 'Submit',
+                        text: '<img src="resources/images/enter reg no.png" height="100px" width="100px">',
                         ui: 'confirm',
-                        /*handler: function()
-                        {
-                           Ext.Viewport.setActiveItem(Ext.create('Med-Table.view.Menu'))
-                        },*/
                         handler: function() {
                             if (!this.overlay) {
                                 this.overlay = Ext.Viewport.add({
                                     xtype: 'panel',
                                     id:'confirmpanel',
-                                    //layour:'vbox',
                                     modal: true,
                                     //hideOnMaskTap: true,
                                     showAnimation: {
@@ -189,7 +184,7 @@ Ext.define('Med-Table.view.Home', {
                                     },
                                     centered: true,
                                     width: Ext.os.deviceType == 'Phone' ? 360 : 500,
-                                    height: Ext.os.deviceType == 'Phone' ? 320 : 500,
+                                    height: Ext.os.deviceType == 'Phone' ? 320 : 550,
                                     styleHtmlContent: true,
                                     items: [
                                         {
@@ -202,7 +197,10 @@ Ext.define('Med-Table.view.Home', {
                                             xtype: 'image',
                                             src: 'resources/images/boy.jpg',
                                             height:'200px',
-                                            margin: 10
+                                            margin: '10 0 10 125'
+                                        },
+                                        {
+                                            html:'<h2>Name: XYZ</h2><h2>Teshil: Bilaspur</h2>'
                                         },
 										{
 										docked: 'bottom',
