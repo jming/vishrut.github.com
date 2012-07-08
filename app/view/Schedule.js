@@ -91,7 +91,7 @@ Ext.define('Med-Table.view.Schedule',{
                     {
                         xtype:'container',
                         height: '286',
-                        style: 'background-color: #63B8FF;',
+                        style: 'background-color: #30cc18;',
 
                         //docked:'top',
                         //flex:1,
@@ -103,8 +103,8 @@ Ext.define('Med-Table.view.Schedule',{
                             {xtype: "spacer"},
                             {
                                 xtype: 'button',
-                                text: '<img src="resources/images/morning-01.png">',
-                                padding:'0px',
+                                text: '<img src="resources/images/morning-01.png" style=" border: solid 5px #adadad;">',
+                                padding:'2px',
                                 //cls: 'morningImageButton',
                                 handler: function()
                                 {
@@ -119,9 +119,16 @@ Ext.define('Med-Table.view.Schedule',{
                         xtype:'list',
                         flex:1,
                         store:'MorningMedicines',
-                        itemTpl:'<img src="{icon}"/> <h1>{name:ellipsis(22)}</h1> <h3>{dose:ellipsis(30)}</h3>',
+                        itemTpl:'<img src="{medicineImage}"/> <h1>{name:ellipsis(15)}</h1>',
                         itemCls:'medicine-entry',
-                        style: 'background-color: #63B8FF;'
+                        style: 'background-color: #30cc18;',
+                        listeners: {
+                            itemtap: function (view, index, item,record,e)
+                            {
+                                audio.stop();
+                                Ext.Viewport.setActiveItem(Ext.create('Med-Table.view.ExpandedMorning'))
+                            }
+                        }
 
                     }
                 ]
@@ -137,7 +144,7 @@ Ext.define('Med-Table.view.Schedule',{
                     {
                         xtype:'container',
                         height: '286',
-                        style: 'background-color: #C6E2FF;',
+                        style: 'background-color: #1f60fe;',
 
                         //docked:'top',
                         //flex:1,
@@ -149,8 +156,8 @@ Ext.define('Med-Table.view.Schedule',{
                             {xtype: "spacer"},
                             {
                                 xtype: 'button',
-                                text: '<img src="resources/images/day-01.png">',
-                                padding:'0px',
+                                text: '<img src="resources/images/day-01.png" style=" border: solid 5px #adadad;">',
+                                padding:'2px',
 
                                 //padding:'5px',
                                 //cls: 'morningImageButton',
@@ -167,9 +174,16 @@ Ext.define('Med-Table.view.Schedule',{
                         xtype:'list',
                         flex:1,
                         store:'AfternoonMedicines',
-                        itemTpl:'<img src="{icon}"/> <h1>{name:ellipsis(22)}</h1> <h3>{dose:ellipsis(30)}</h3>',
+                        itemTpl:'<img src="{medicineImage}"/> <h1>{name:ellipsis(15)}</h1>',
                         itemCls:'medicine-entry',
-                        style: 'background-color: #C6E2FF;'
+                        style: 'background-color: #1f60fe;',
+                        listeners: {
+                            itemtap: function (view, index, item,record,e)
+                            {
+                                audio.stop();
+                                Ext.Viewport.setActiveItem(Ext.create('Med-Table.view.ExpandedAfternoon'))
+                            }
+                        }
 
                     }
                 ]
@@ -185,7 +199,7 @@ Ext.define('Med-Table.view.Schedule',{
                     {
                         xtype:'container',
                         height: '286',
-                        style: 'background-color: #63B8FF;',
+                        style: 'background-color: #30cc18;',
 
                         //docked:'top',
                         //flex:1,
@@ -197,8 +211,8 @@ Ext.define('Med-Table.view.Schedule',{
                             {xtype: "spacer"},
                             {
                                 xtype: 'button',
-                                text: '<img src="resources/images/evening-01.png">',
-                                padding:'0px',
+                                text: '<img src="resources/images/evening-01.png" style=" border: solid 5px #adadad;">',
+                                padding:'2px',
 
                                 //padding:'5px',
                                 //cls: 'morningImageButton',
@@ -215,9 +229,16 @@ Ext.define('Med-Table.view.Schedule',{
                         xtype:'list',
                         flex:1,
                         store:'EveningMedicines',
-                        itemTpl:'<img src="{icon}"/> <h1>{name:ellipsis(22)}</h1> <h3>{dose:ellipsis(30)}</h3>',
+                        itemTpl:'<img src="{medicineImage}"/> <h1>{name:ellipsis(15)}',
                         itemCls:'medicine-entry',
-                        style: 'background-color: #63B8FF;'
+                        style: 'background-color: #30cc18;',
+                        listeners: {
+                            itemtap: function (view, index, item,record,e)
+                            {
+                                audio.stop();
+                                Ext.Viewport.setActiveItem(Ext.create('Med-Table.view.ExpandedEvening'))
+                            }
+                        }
 
                     }
                 ]
@@ -233,7 +254,7 @@ Ext.define('Med-Table.view.Schedule',{
                     {
                         xtype:'container',
                         height: '286',
-                        style: 'background-color: #C6E2FF;',
+                        style: 'background-color: #1f60fe;',
 
                         //docked:'top',
                         //flex:1,
@@ -245,8 +266,8 @@ Ext.define('Med-Table.view.Schedule',{
                             {xtype: "spacer"},
                             {
                                 xtype: 'button',
-                                text: '<img src="resources/images/night-01.png">',
-                                padding:'0px',
+                                text: '<img src="resources/images/night-01.png" style=" border: solid 5px #adadad;">',
+                                padding:'2px',
 
                                 //padding:'5px',
                                 //cls: 'morningImageButton',
@@ -263,9 +284,16 @@ Ext.define('Med-Table.view.Schedule',{
                         xtype:'list',
                         flex:1,
                         store:'NightMedicines',
-                        itemTpl:'<img src="{icon}"/> <h1>{name:ellipsis(22)}</h1> <h3>{dose:ellipsis(30)}</h3>',
+                        itemTpl:'<img src="{medicineImage}"/> <h1>{name:ellipsis(15)}',
                         itemCls:'medicine-entry',
-                        style: 'background-color: #C6E2FF;'
+                        style: 'background-color: #1f60fe;',
+                        listeners: {
+                            itemtap: function (view, index, item,record,e)
+                            {
+                                audio.stop();
+                                Ext.Viewport.setActiveItem(Ext.create('Med-Table.view.ExpandedNight'))
+                            }
+                        }
 
                     }
                 ]

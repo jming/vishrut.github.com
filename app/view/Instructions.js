@@ -24,37 +24,36 @@ Ext.define('Med-Table.view.Instructions',{
                 ui:'light',
                 height : 'auto',
                 items: [
-
-                {
-                 xtype: 'button',
-                 text : '<img src="resources/images/reminder-small.png">',
-                 handler: function()
-                 {
-                    audio.stop();
-                    Ext.Viewport.setActiveItem(Ext.create('Med-Table.view.Schedule'))
-                 },
-                 padding:'5px'
-                 },
-                {
-                    xtype: 'button',
-                    disabled:'true',
-                    text : '<img src="resources/images/instr_clicked.png">',
-                    handler: function()
                     {
-                        Ext.Viewport.setActiveItem(Ext.create('Med-Table.view.Instructions'))
+                        xtype: 'button',
+                        text : '<img src="resources/images/reminder-small.png">',
+                        handler: function()
+                        {
+                            audio.stop();
+                            Ext.Viewport.setActiveItem(Ext.create('Med-Table.view.CalendarDisplay'))
+                        },
+                        padding:'5px'
                     },
-                    padding:'5px'
-                },
-                {
-                    xtype: 'button',
-                    text : '<img src="resources/images/appoint-small.png">',
-                    handler: function()
                     {
-                        audio.stop();
-                        Ext.Viewport.setActiveItem(Ext.create('Med-Table.view.Appointment'))
+                        xtype: 'button',
+                        disabled:'true',
+                        text : '<img src="resources/images/instr_clicked.png">',
+                        handler: function()
+                        {
+                            Ext.Viewport.setActiveItem(Ext.create('Med-Table.view.Instructions'))
+                        },
+                        padding:'5px'
                     },
-                    padding:'5px'
-                },
+                    {
+                        xtype: 'button',
+                        text : '<img src="resources/images/appoint-small.png">',
+                        handler: function()
+                        {
+                            audio.stop();
+                            Ext.Viewport.setActiveItem(Ext.create('Med-Table.view.Appointment'))
+                        },
+                        padding:'5px'
+                    },
                     {
                         xtype: 'spacer'
                     },
@@ -68,42 +67,36 @@ Ext.define('Med-Table.view.Instructions',{
                         },
                         padding:'5px'
                     }
+                ]
 
-
-            ]
-
-        },
+            },
             {
                 flex:1,
-        layout: 'hbox',
-        pack: 'center',
-        /*layout:'fit',
-        align: 'center',
-        pack:'center',*/
-        items: [
-                {
-                xtype: 'image',
-                src: 'resources/images/instructions-02.png',
-                flex: 1,
-                margin:'20'
-                },
-                {
-                xtype:'list',
-                style: 'background-color: #759E60;',
-                flex:3,
-                margin: '100 0 0 0',
-                store:'Instructions',
-                itemTpl:'<img src="{image}" height="150" width="150" hspace="90" vspace="20"></img>',
-                inline: { wrap: true },
-                scrollable: {
-                    direction: 'vertical',
-                    directionLock: true
-                }
-                }
-    ]}]
-
-
-
+                layout: 'hbox',
+                pack: 'center',
+                /*layout:'fit',
+                 align: 'center',
+                 pack:'center',*/
+                items: [
+                    {
+                        xtype: 'image',
+                        src: 'resources/images/instructions-02.png',
+                        flex: 1,
+                        margin:'20'
+                    },
+                    {
+                        xtype:'list',
+                        style: 'background-color: #759E60;',
+                        flex:3,
+                        margin: '100 0 0 0',
+                        store:'Instructions',
+                        itemTpl:'<img src="{image}" height="150" width="150" hspace="90" vspace="20"></img>',
+                        inline: { wrap: true },
+                        scrollable: {
+                            direction: 'vertical',
+                            directionLock: true
+                        }
+                    }
+                ]}]
     }
-
 })

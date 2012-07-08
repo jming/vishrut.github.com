@@ -7,7 +7,7 @@
     <link rel="stylesheet" type="text/css" href="resources/css/schedule.css" media="all"/>
     <link rel="stylesheet" type="text/css" href="resources/css/menu.css" media="all"/>
 
-    <title>Med-Table</title>
+    <title>Medicine Reminder App</title>
     <style type="text/css">
          /**
          * Example of an initial loading indicator.
@@ -58,23 +58,36 @@
             width:80px;
             height:80px;
             border-radius: 5px;
-            border:1px solid black;
+            border:2px solid black;
             padding:5px;
             float:left;
+            margin-bottom: 10px;
         }
 
         .medicine-entry h1{
-            font-size: 35pt;
-            float:left;
-            margin-left:10px;
-        }
-
-
-        .medicine-entry h3{
             font-size: 15pt;
             clear:both;
-            margin-left:90px;
+            /*background-color: #767a71;*/
         }
+
+        .medicine-entry-morning h1{
+            font-size: 15pt;
+            clear:both;
+            /*background-color: #767a71;*/
+            margin-bottom: 10px;
+        }
+
+        .medicine-entry-morning img{
+            width:80px;
+            height:80px;
+            border-radius: 5px;
+            border:2px solid black;
+            padding:5px;
+            float:left;
+            margin-right: 20px;
+            margin-bottom: 5px;
+        }
+
     </style>
     <!-- The line below must be kept intact for Sencha Command to build your application -->
     <script id="microloader" type="text/javascript" src="sdk/microloader/development.js"></script>

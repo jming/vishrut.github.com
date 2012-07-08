@@ -4,15 +4,23 @@ Ext.define('Med-Table.store.NightMedicines', {
         model:'Med-Table.model.Medicine',
         data:[
             {
-                name:'tab7',
-                icon:'resources/images/t7.gif',
-                dose:'1/2 Tablet'
-            },
+                name:'Benzathine Penicillin Injection',
+                medicineImage:'resources/tablets/benzathine-penicillin.jpg',
+                afterBeforeFood:'resources/images/med_after_eating-01.png',
+                dose:'resources/images/1-injection.jpg',
+                warning1:'resources/images/infant_with_cross-01.png',
+                warning2:'resources/images/pregnant_with_cross-01.png',
+                audio:'resources/Audio/Tablets/Benzathine Penicillin Injection.mp3'
+            }/*,
             {
-                name:'tab8',
-                icon:'resources/images/t8.png',
-                dose:'1/2 Tablet'
-            }
+                name:'Artemether',
+                medicineImage:'resources/tablets/artemether.jpg',
+                afterBeforeFood:'resources/images/med_after_eating-01.png',
+                dose:'resources/images/half_med-01.png',
+                warning1:'resources/images/infant_with_cross-01.png',
+                warning2:'resources/images/pregnant_with_cross-01.png',
+             audio:'resources/Audio/Tablets/Artemether.mp3'
+            }  */
         ]
     }
 });

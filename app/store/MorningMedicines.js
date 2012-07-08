@@ -4,14 +4,22 @@ Ext.define('Med-Table.store.MorningMedicines',{
         model:'Med-Table.model.Medicine',
         data:[
             {
-                name:'tab1',
-                icon:'resources/images/t1.gif',
-                dose:'1 Tablet'
+                name:'Enalapril Maleate',
+                medicineImage:'resources/tablets/enalapril.jpg',
+                afterBeforeFood:'resources/images/med_before_eating-01.png',
+                dose:'resources/images/full_med-01.png',
+                warning1:'resources/images/infant_with_cross-01.png',
+                warning2:'resources/images/pregnant_with_cross-01.png',
+                audio:'resources/Audio/Tablets/Enalapril.mp3'
             },
             {
-                name:'tab2',
-                icon:'resources/images/t2.jpg',
-                dose:'1/2 Tablet'
+                name:'Atenolol',
+                medicineImage:'resources/tablets/atenolol.jpg',
+                afterBeforeFood:'resources/images/med_before_eating-01.png',
+                dose:'resources/images/half_med-01.png',
+                warning1:'resources/images/infant_with_cross-01.png',
+                warning2:'resources/images/pregnant_with_cross-01.png',
+                audio:'resources/Audio/Tablets/Atenolol.mp3'
             }
         ]
     }

@@ -30,7 +30,7 @@ Ext.define('Med-Table.view.Appointment',{
                      handler: function()
                      {
                      audio.stop();
-                     Ext.Viewport.setActiveItem(Ext.create('Med-Table.view.Schedule'))
+                     Ext.Viewport.setActiveItem(Ext.create('Med-Table.view.CalendarDisplay'))
                      },
                      padding:'5px'
                      },
@@ -72,8 +72,15 @@ Ext.define('Med-Table.view.Appointment',{
 
                 ]
 
-            }]
+            },
+			
+			{
+                    html: '<embed src="calendar/appointment.html" width="100%" height="150%"/>'
+            }
+			
+			]
 
     }
+	
 
 });

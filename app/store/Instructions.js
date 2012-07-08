@@ -5,7 +5,7 @@ Ext.define('Med-Table.store.Instructions',{
         data:[
             {
                 instruction:'wash hands',
-                image:'resources/images/washhands_with tick-01.png'
+                image:'resources/images/no-smoking.jpg'
             },
             {
                 instruction:'no spice',
