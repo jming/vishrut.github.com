@@ -17,7 +17,7 @@ Ext.define('Med-Table.store.NightMedicines', {
     extend: 'Ext.data.Store',
     config: {
         model: 'Med-Table.model.Medicine',
-        data: [{
+        data: [/*{
             name: 'Benzathine Penicillin Injection',
             medicineImage: 'resources/tablets/benzathine-penicillin.jpg',
             afterBeforeFood: 'resources/images/med_after_eating-01.png',
@@ -26,7 +26,7 @@ Ext.define('Med-Table.store.NightMedicines', {
             warning2: 'resources/images/pregnant_with_cross-01.png',
             audio: 'resources/Audio/Tablets/Benzathine Penicillin Injection.mp3'
         }
-            /*,
+            ,
              {
              name:'Artemether',
              medicineImage:'resources/tablets/artemether.jpg',

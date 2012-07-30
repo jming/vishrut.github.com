@@ -28,7 +28,7 @@ Ext.define('Med-Table.store.AfternoonMedicines', {
                 warning2:'resources/images/pregnant_with_cross-01.png',
                 audio:'resources/Audio/Tablets/Warfarin Sodium (1mg).mp3'
 
-        }, */
+        }, 
 		{
             name: 'Warfarin Sodium (2mg)',
             medicineImage: 'resources/tablets/warfarin-sodium-2mg.jpg',
@@ -37,6 +37,6 @@ Ext.define('Med-Table.store.AfternoonMedicines', {
             warning1: 'resources/images/infant_with_cross-01.png',
             warning2: 'resources/images/pregnant_with_cross-01.png',
             audio: 'resources/Audio/Tablets/Warfarin Sodium (2mg).mp3'
-        }]
+        }*/]
     }
 });
